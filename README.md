@@ -56,4 +56,4 @@ git commit -m "Description of changes"
 git push origin feature-branch
 ```
 
-#**Note: The backend for this project is planned and will be added in future updates. The current version focuses solely on the frontend.**#
+# **Note: The backend for this project is planned and will be added in future updates. The current version focuses solely on the frontend.**
