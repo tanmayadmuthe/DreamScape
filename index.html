@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DreamScape</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top rounded-bottom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DreamScape</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#signup">Join Waitlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center text-white rounded">
+      <div class="container">
+        <h1 class="display-4">Welcome to DreamScape</h1>
+        <a href="#signup" class="btn btn-primary btn-lg rounded-pill"
+          >Join the Waitlist</a
+        >
+      </div>
+    </header>
+    <p>Explore and visualize your dreams with AI-powered analysis</p>
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">DreamScape Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-box rounded">
+              <i class="bi bi-pencil-square fs-1"></i>
+              <h3>Dream Recorder</h3>
+              <p>
+                Record your dreams instantly using text or voice input,
+                available anytime.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box rounded">
+              <i class="bi bi-film fs-1"></i>
+              <h3>Dream Visualization</h3>
+              <p>
+                Turn your dream descriptions into 3D visuals or animated
+                sequences.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-box rounded">
+              <i class="bi bi-bar-chart fs-1"></i>
+              <h3>Dream Analytics</h3>
+              <p>
+                Analyze recurring themes and get insights into your subconscious
+                mind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonial-card">
+        <img src="images/profiles/girl.png" alt="Profile Image 1" />
+        <blockquote>
+          "DreamScape transformed how I understand my dreams. It's like
+          exploring another dimension!"
+        </blockquote>
+        <cite>- Alex Johnson</cite>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/profiles/man.png" alt="Profile Image 2" />
+        <blockquote>
+          "The visualization feature is incredible. It feels surreal to see my
+          dreams come to life."
+        </blockquote>
+        <cite>- Emily Davis</cite>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="images/profiles/man2.png" alt="Profile Image 3" />
+        <blockquote>
+          "DreamScape’s insights have given me a new perspective on my
+          subconscious thoughts."
+        </blockquote>
+        <cite>- Michael Green</cite>
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Sign Up for Updates</h2>
+        <form id="signupForm">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control rounded"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary rounded">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <button id="topBtn" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+      <!-- Font Awesome icon -->
+    </button>
+
+    <footer>
+      <p>&copy; 2024 DreamScape. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://x.com/TanmayAdmuthe"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-x"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/blexed.tanmay"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tanmay-admuthe/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

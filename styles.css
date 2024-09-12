@@ -1,0 +1,327 @@
+/* Global Variables */
+:root {
+  --font-family: "Quicksand", sans-serif; /* Global font variable */
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-family); /* Use the global font variable */
+  background-color: #2c2f33; /* Dark grayish background */
+  color: #e0e0e0; /* Light gray text for readability */
+  line-height: 1.6; /* Improve text readability */
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+label {
+  color: #e0e0e0; /* Consistent light gray text */
+  margin-bottom: 20px; /* Space out headings and text for clarity */
+}
+
+.lead {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 50, 0.7),
+      rgba(0, 0, 100, 0.7)
+    ),
+    url("images/background.png");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Added text shadow for a dreamy effect */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3a3f44; /* Darker grayish background */
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.navbar.fixed-top {
+  background-color: #2c2f33; /* Slightly darker when fixed at the top */
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  color: #e0e0e0; /* Lighter icon color */
+}
+
+.nav-link {
+  color: #e0e0e0; /* Light gray links for better readability */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #7289da; /* Softer blue hover effect */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7289da; /* Soft blue color for the brand */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #5b6fbb; /* Slightly darker blue on hover */
+}
+
+/* Feature Boxes */
+.feature-box {
+  background-color: #3e4247; /* Slightly lighter gray background */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  background-color: #485058; /* Slight hover color change */
+}
+
+#features i {
+  color: #7289da; /* Soft blue for icons */
+  margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #3e4247;
+  padding: 60px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+  background-color: #485058; /* Slightly lighter gray background for contrast */
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Add this CSS to your existing file */
+
+/* Profile Picture Styling */
+.testimonial-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Favicon */
+link[rel="icon"] {
+  display: none;
+}
+
+.testimonial-card blockquote {
+  font-size: 1.5rem; /* Bigger font size */
+  font-style: italic;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.testimonial-card cite {
+  font-size: 1.1rem;
+  color: #7289da; /* Softer color for names */
+  display: block;
+  margin-top: 15px;
+}
+
+/* Responsive Testimonials */
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
+}
+
+/* Form */
+.form-control {
+  background-color: #3e4247;
+  border: 1px solid #7289da;
+  color: #e0e0e0;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-primary {
+  background-color: #7289da; /* Soft blue */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5b6fbb; /* Darker blue on hover */
+}
+
+/* Back to Top Button */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #7289da; /* Soft blue background */
+  color: white;
+  border: none;
+  width: 60px; /* Equal width and height for a circular shape */
+  height: 60px; /* Equal width and height for a circular shape */
+  border-radius: 50%; /* Fully rounded corners for circular shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  font-size: 1.5rem; /* Font size for the icon */
+  display: flex; /* Centering the icon */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  display: none; /* Initially hidden */
+}
+
+/* Hover and Focus Styles */
+#topBtn:hover,
+#topBtn:focus {
+  background-color: #5b6fbb; /* Slightly darker blue */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  #topBtn {
+    bottom: 10px;
+    right: 10px;
+    width: 50px; /* Slightly smaller on small screens */
+    height: 50px; /* Slightly smaller on small screens */
+  }
+
+  #topBtn i {
+    font-size: 1.25rem; /* Slightly smaller icon on small screens */
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #23272a; /* Dark gray background */
+  color: #e0e0e0; /* Light gray text */
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 20px 10px; /* Reduced padding */
+  text-align: center;
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+/* Social Icons */
+.social-icons a {
+  font-size: 1.5rem; /* Larger icons */
+  color: #7289da; /* Soft blue color for icons */
+  text-decoration: none;
+  margin: 0 10px; /* Space out the icons */
+}
+
+.social-icons a:hover {
+  color: #5b6fbb; /* Darker blue on hover */
+}
+
+/* Responsive Footer */
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.75rem; /* Even smaller font size on very small screens */
+  }
+
+  .social-icons a {
+    font-size: 1.25rem; /* Slightly smaller icons for small screens */
+    margin: 0 5px; /* Less space between icons on small screens */
+  }
+}
+
+/* Responsive Footer */
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.75rem; /* Even smaller font size on very small screens */
+  }
+
+  .social-icons a {
+    font-size: 1rem; /* Smaller icons for small screens */
+    margin: 0 5px; /* Less space between icons on small screens */
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .feature-box {
+    margin-bottom: 10px;
+  }
+
+  .testimonials blockquote {
+    font-size: 1.5rem;
+  }
+}
