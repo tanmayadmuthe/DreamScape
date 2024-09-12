@@ -57,3 +57,7 @@ git push origin feature-branch
 ```
 
 # **Note: The backend for this project is planned and will be added in future updates.**
+![image](https://github.com/user-attachments/assets/69f91399-e8a5-4ce9-aeec-c1362866f23c)
+
+![image](https://github.com/user-attachments/assets/6f76a1e8-25f7-482a-a526-c699085bf56a)
+
